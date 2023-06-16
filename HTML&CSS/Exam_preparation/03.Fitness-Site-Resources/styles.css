@@ -1,0 +1,215 @@
+
+.top {
+    background-color: #d01919;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    padding-top: 0.6em;
+    height: 25px;
+
+}
+
+.top .phone-icon {
+    color: #fff;
+    padding-left: 25px;
+}
+.top p .phone {
+    padding-left: 40px;
+}
+.top .phone-all,
+.top .address-all {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.top p .address {
+    align-self: center;
+}
+
+.socials {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+   
+}
+
+.socials li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+   
+}
+.socials li {
+    padding: 5px 3px;
+    
+}
+
+
+ .socials  i {
+    display: flex;
+    color: #fff;
+        
+}
+
+
+.navigation ul {
+    display: flex;
+    justify-content: end;
+     gap: 8px;
+}
+
+.navigation li  {
+    list-style: none;
+    padding: 20px 10px;
+    padding-right: 30px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-banner {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    
+}
+
+.site {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/fitness-main.jpg);
+    background-size: 100% auto;
+    background-position: center -12em;
+    background-repeat: no-repeat;
+}
+
+.section-banner h2 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 3px;
+    
+    
+}
+
+.section-banner p {
+    text-align: center;
+    color: #fff;
+    width: 32%;
+    align-self: center;
+
+}
+.section-banner a {
+    display: inline-block;
+    padding: 5px 10px;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    background-color: #d01919;
+    position: relative;
+    width: fit-content;
+    align-self: center;
+    border-radius: 4px;
+
+}
+
+.section-welcome {
+    background-color: #fff;
+    margin-top: 126px;
+    padding-bottom: 30px;
+}
+
+ .columns {
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+
+ .section-welcome .columns li span img{
+    width: 50px;
+ } 
+.columns li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%
+
+}
+
+.section-welcome .columns li .title {
+    color: #d01919;
+    padding: 10px;
+}
+
+
+.section-welcome h2,
+.section-coaches h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    
+}
+
+.section-welcome header h2:after,
+.section-coaches header h2:after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 16px auto;
+    background: #d01919;
+}
+
+.section-coaches .columns li .title {
+    color: #d01919;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.section-coaches .columns li .desc {
+    color: #c5cbd3;
+}
+
+.section-coaches .columns li .name{
+    font-weight: 600;
+}
+
+.section-coaches .columns li  span img {
+   width:230px;
+}
+
+.section-coaches {
+    background-color: #efefef;
+}
+
+.site-footer {
+    background-color: #d01919;
+    padding-bottom: 0px;
+    
+}
+
+.site-footer p {
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
