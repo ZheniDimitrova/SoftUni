@@ -1,0 +1,4 @@
+
+*.class
+Data_Structures_Java/ds_fundamentals/linearDataStructures/02. Skeleton/target/generated-test-sources/test-annotations/benchmark/generated/BenchmarkTests_testAddInQueue_jmhTest.java
+Data_Structures_Java/ds_fundamentals/linearDataStructures/02. Skeleton/target/generated-test-sources/test-annotations/benchmark/generated/BenchmarkTests_testAddInSinglyLinkedListAddFirst_jmhTest.java
