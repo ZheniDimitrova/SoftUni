@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/commons::head}"></head>
+<body>
+<header th:replace="~{fragments/commons::nav}"></header>
+<main>
+
+    <div class="container bg-blur rounded mt-3 mb-4">
+        <h1>All words</h1>
+        <div class="row mt-3 mb-3">
+
+            <div class="col-5 bg-dark rounded m-auto" style="height: 30vh; overflow: auto">
+                <h3 class="mySticky bg-gray text-dark rounded">German: <span th:text="${germanWordsCount}"></span></h3>
+                    <div class="mt-3 rounded badge-warning" th:each="w : ${germanList}">
+                        <img class="mr-2" src="/img/german.png" alt="Flag" width="20px" height="20px">
+                        <span>
+                            <span th:text = "${w.term}"></span>: <span th:text = "${w.translation}"></span></span>
+                        <br>
+                        <span>Example: <span th:text="${w.example}"></span></span>
+                        <br>
+                            <span>Added by: <span th:text="${w.name}"></span> on <span th:text="${w.inputDate}"></span> </span>
+                        <a class="ml-3 text-danger" th:href="@{/words/deleteWord/{id}(id=${w.id})}">Remove</a>
+                    </div>
+            </div>
+
+            <div class="col-5 bg-dark rounded m-auto" style="height: 30vh; overflow: auto">
+                <h3 class="mySticky bg-gray text-dark rounded">Spanish: <span th:text="${spanishWordsCount}"></span></h3>
+                    <div class="mt-3 rounded badge-secondary"  th:each="w : ${spanishList}">
+                        <img class="mr-2" src="/img/spanish.png" alt="Flag" width="20px" height="20px">
+                        <span>
+                            <span th:text = "${w.term}"></span>: <span th:text = "${w.translation}"></span></span>
+                        <br>
+                        <span>Example: <span th:text="${w.example}"></span></span>
+                        <br>
+                        <span>Added by: <span th:text="${w.name}"></span> on <span th:text="${w.inputDate}"></span> </span>
+                        <a class="ml-3 text-danger" th:href="@{/words/deleteWord/{id}(id=${w.id})}">Remove</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+            <div class="col-5 bg-dark rounded m-auto" style="height: 30vh; overflow: auto">
+                <h3 class="mySticky bg-gray text-dark rounded">French: <span th:text="${frenchWordsCount}"></span></h3>
+                    <div class="mt-3 rounded badge-info"  th:each="w : ${frenchList}">
+                        <img class="mr-2" src="/img/french.png" alt="Flag" width="20px" height="20px">
+                        <span>
+                            <span th:text = "${w.term}"></span>: <span th:text = "${w.translation}"></span></span>
+                        <br>
+                        <span>Example: <span th:text="${w.example}"></span></span>
+                        <br>
+                        <span>Added by: <span th:text="${w.name}"></span> on <span th:text="${w.inputDate}"></span> </span>
+                        <a class="ml-3 text-danger" th:href="@{/words/deleteWord/{id}(id=${w.id})}">Remove</a>
+                    </div>
+            </div>
+
+            <div class="col-5 bg-dark rounded m-auto" style="height: 30vh; overflow: auto">
+                <h3 class="mySticky bg-gray text-dark rounded">Italian: <span th:text="${italianWordsCount}"></span></h3>
+                    <div class="mt-3 rounded badge-success" th:each="w : ${italianList}">
+                        <img class="mr-2" src="/img/italian.png" alt="Flag" width="20px" height="20px">
+                        <span>
+                            <span th:text = "${w.term}"></span>: <span th:text = "${w.translation}"></span></span>
+                        <br>
+                        <span>Example: <span th:text="${w.example}"></span></span>
+                        <br>
+                        <span>Added by: <span th:text="${w.name}"></span> on <span th:text="${w.inputDate}"></span> </span>
+                        <a class="ml-3 text-danger" th:href="@{/words/deleteWord/{id}(id=${w.id})}">Remove</a>
+                    </div>
+            </div>
+        </div>
+        <a th:href="@{/words/deleteAll}" class="btn btn-danger">Remove all <span th:text="${totalWords}"></span> words</a>
+    </div>
+</main>
+<footer th:replace="~{fragments/commons::footer}"></footer>
+</body>
+</html>
